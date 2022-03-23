@@ -95,21 +95,35 @@ footer {
     align-items: center;
     flex-flow: row wrap;
 }
+header {
+    padding: 15px 0;
+}
 header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
+}
+header .header-divider {
+    width: 100%;
 }
 header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60
+    padding: 15px 0;
 }
 header nav ul {
     display: flex;
     justify-content: space-around;
+    width: 60%;
+}
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
 }
 footer .social-icons {
     display: flex;
@@ -121,14 +135,26 @@ footer .social-icons p {
     justify-content: center;
     align-items: center;
 }
+footer p {
+    margin: 0;
+}
 
 /* ----------------- Mobile Styles - Homepage ---------------- */
 
+.content-wrapper {
+    width: 89%;
+}
 /* Hero Area */
 .hero-area {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+}
+.hero-area .content-wrapper {
+    width: 89%;
+}
+.hero-area h1 {
+    padding: 52px 20px;
 }
 
 /* Aside */
@@ -138,18 +164,30 @@ aside {
     align-items: center;
     flex-flow: row wrap;
 }
+aside .form-description {
+    padding: 28px 19px;
+}
+aside .form {
+    padding: 17px 19px;
+}
 
 /* Features */
 .features {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    width: 89%;
+    padding: 48px 19px;
 }
 .features .features-items {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 57%;
+}
+.features p {
+    margin: 0;
 }
 
 /* Reviews */
@@ -157,6 +195,10 @@ aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    padding: 52px 19px;
+}
+.reviews h3 {
+    width: 49%;
 }
 
 
