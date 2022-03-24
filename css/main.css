@@ -206,7 +206,8 @@ aside {
     margin-bottom: 40px;
 }
 .reviews h3 {
-    width: 49%;
+    width: 55%;
+    maring: 20px 0;
 }
 
 
@@ -244,6 +245,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 50px 0 0 0;
 }
 .faq h2 {
     margin-bottom: 40px;
@@ -347,32 +349,28 @@ aside {
     /*Tablet styles here */
 
     /* General styles */
-
-    .content.wrapper {
+    .content-wrapper {
         max-width: 640px;
         margin: 100px 0;
     }
 
     /* Header styles */
-
     header {
-        justify-content: center;
+        justify-content: space-around;
+        padding: 33px 0;
     }
 
     header .content-wrapper {
         justify-content: space-between;
-        width: 83%;
-        margin-left: 64px;
+        width: 100%;
     }
 
     header nav {
-        width: 26%;
-        justify-content: space-around;
+        width: 20%;
     }
 
     header nav ul {
         justify-content: space-between;
-        list-style-type: none;
     }
 
     .header-divider {
@@ -381,57 +379,46 @@ aside {
 
     /* Hero area */
 
-    .hero-area h1 {
-        width: 73%;
-    }
-
     /* Aside */
-
     aside .content-wrapper {
         margin: 50px 0;
         display: flex;
         justify-content: space-between;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
     }
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
-        width: 83%;
+        width: 40%;
         margin: 0;
     }
 
     /* Features */
-
     .features article {
-        width: 26%;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-flow: row wrap;
-        flex-basis: 200px;
+        flex-flow: column wrap;
+        flex-basis: 50%;
     }
 
     .features .features-item-description {
-        width: 200px;
+        width: 50%;
     }
 
     /* Reviews */
-
     .reviews article {
-        width: 83%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 
     .reviews article div {
-        width: 42%;
+        width: 49%;
     }
 
     /* Footer */
-
     footer .content-wrapper {
         width: 65%;
-        justify-content: space-around;
         margin: 100px 0;
     }
 
@@ -446,39 +433,38 @@ aside {
     }
 
     footer .copyright {
-        width: 26%;
+        width: 100%;
     }
 
     /* About Page */
-
     .mission-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 20px;
     }
 
     .mission-content p {
-        width: 300px;
+        width: 45%;
     }
 
     .contact-section .content-wrapper h2 {
-        width: 68%;
+        width: 80%;
     }
 
     .contact-content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 
     /* FAQ page */
-
     .faq .content-wrapper {
         justify-content: space-between;
     }
 
     .faq-content {
-        flex-basis: 40%;
+        flex-basis: 45%;
     }
 
     .faq h2 {
@@ -487,7 +473,59 @@ aside {
 }
 
 @media only screen and (min-width: 1200px) {
-    /*Desktop styles here */
+    /* Desktop styles here */
+
+    /* General styles */
+    .content-wrapper {
+        max-width: 960px;
+    }
+
+    /* Hero */
+    .hero-area h1 {
+        width: 57%;
+    }
+
+    /* Aside */
+    aside .content-wrapper {
+        justify-content: space-around;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width: 67%;
+    }
+
+    /* Features */
+    .features h2 {
+        width: 74%;
+    }
+
+    .features article {
+        flex-basis: 192px;
+    }
+
+    /* Reviews */
+    .reviews article div {
+        width: 78%;
+    }
+
+    /* ========================================================
+       About Page
+       ========================================================
+    */
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 80%;
+    }
+
+    /* ========================================================
+       FAQ page
+       ========================================================
+    */
+    .faq h2 {
+        width: 100%;
+    }
+
 }
 
 /* ==========================================================================
