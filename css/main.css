@@ -355,6 +355,7 @@ input[type=button] {
     background-color: #527158;
 }
 
+/*
 .map figure {
     width: 100%;
     height: 0;
@@ -370,6 +371,7 @@ input[type=button] {
     top: 0;
     left: 0;
 }
+*/
 
 .contact-section {
     display: flex;
@@ -540,7 +542,7 @@ input[type=button] {
     }
 
     header nav {
-        width: 40%;
+        width: 30%;
     }
 
     header nav ul {
