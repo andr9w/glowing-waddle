@@ -102,7 +102,14 @@ body {
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
 }
+
+/*
+ul {
+    margin-left: -40px;
+}
+*/
 
 a {
     color: #e2e3ed;
@@ -113,6 +120,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
     font-weight: 500;
+    margin: 0;
 }
 
 h3,
@@ -199,6 +207,7 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    padding-right: 40px; /* balance user agent style from browser */
 }
 
 header nav ul li {
@@ -229,10 +238,19 @@ footer .social-icons {
     align-items: center;
 }
 
+footer .social-icons p i {
+    font-size: 1.3125em;
+}
+
 footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
+/*    margin: 0 10px; */
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 footer .copyright {
@@ -547,7 +565,7 @@ input[type=button] {
     }
 
     header nav {
-        width: 30%;
+        width: 35%;
     }
 
     header nav ul {
@@ -600,6 +618,10 @@ input[type=button] {
         width: 62%;
     }
 
+    .features i {
+        margin-bottom: 30px;
+    }
+
     /* Reviews */
     .reviews article {
         display: flex;
@@ -648,6 +670,10 @@ input[type=button] {
 
     footer .copyright {
         width: 100%;
+    }
+
+    footer .social-icons p {
+        margin: 0 10px;
     }
 
     /* About Page */
@@ -762,6 +788,10 @@ input[type=button] {
 
     footer h4 {
         font-size: 1.875em;
+    }
+
+    footer .social-icons p {
+        margin: 0 10px;
     }
 
     /* ========================================================
